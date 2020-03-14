@@ -1,0 +1,81 @@
+h1{
+ 	font-size: 31px;
+	color: #00ff00;
+	padding: 20px 10px 0;
+}
+
+body{
+	padding:120px 0;
+	background-image: url('images/hacker.jpeg');
+	background-size: contain;
+	}
+
+#content{
+	width: 400px;
+	height: 490px;
+	background-color: #000000;
+	margin-left: 150px;
+		
+}
+.input{
+	text-align: left;
+	font-size: 26px;
+	color: #00ff00;
+	padding: 8px 15px;
+}
+
+input[type=checkbox]{
+	float: right;
+	height: 20px;
+	width: 20px;
+}
+
+.result-container {
+	text-align: center;
+	border-radius: 22px;
+	background-color: rgba(255, 255, 255, .1);
+	font-size: 22px;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+#result{
+	font-size: 28px;
+	font-style: italic;
+	color: #00ff00;
+	display: inline-block;
+	margin: 8px;
+	
+}
+
+.btn{
+	color: #000000;
+	border: none;
+	display: inline-block;
+	background-color: #808080;
+}
+
+#generate{
+	border-radius: 25px;
+	padding: 15px;
+	margin: 20px;
+	font-size: 26px;
+	width: 360px;
+}
+
+#clipboard{
+	position: relative;
+	border-radius: 22px;
+	height:40px;
+	width: 40px;
+	float: right;
+	margin: 5px;
+}
+
+#length{
+	float: right;
+	font-size: 18px;
+	border: none;
+	background: #808080;
+	width: 30px;
+}
