@@ -20,6 +20,17 @@ const clipboardEL = document.getElementById('clipboard');
 	const syms = '!@#$%^&*()[]{}<>`~;:,.?/'
 	return syms[Math.floor(Math.random()*syms.length)];
 	}
+
+	function shuffle(str){
+		var arr = str.split('');
+		for(let i=0; i<arr.length; i++){
+			j = Math.floor(Math.random()*arr.length);
+			temp = arr[i];
+			arr[i] = arr[j];
+			arr[j] = temp;
+		}
+	return arr.join('');
+	}
 		
 	const getRandom = {
 		upper : getRandomUpper,
@@ -56,7 +67,7 @@ const clipboardEL = document.getElementById('clipboard');
 				generatedPassword += getRandom[func]();
 			})
 		}
-		const FinalPass = generatedPassword.slice(0,length);
+		const FinalPass = shuffle(generatedPassword.slice(0,length));
 		return FinalPass;
 	}
 
