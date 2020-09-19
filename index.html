@@ -1,10 +1,58 @@
+<!-- Password generator by Sidharth [github@sidharth-001] -->
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Password Generator</title>
-	<link href="mycss.css" rel="stylesheet" type="text/css">
+
+	<head>
+		<title>Password Generator</title>
+		<link href="mycss.css" rel="stylesheet" type="text/css">
+		<link  rel="icon" type="image/x-icon" href="data:image/x-icon;base64,
+		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" />
+		<!-- The long string above is just the base64 equivalent of icon (image) for favicon -->
+	</head>
 	
-</head>
 	<body>
 		<div id=content>
 				<h1><b>PASSWORD GENERATOR</b></h1>
@@ -36,10 +84,7 @@
 				<button class="btn" id="generate">Generate Password
 				</button>
 		</div>
-	</body>
-	
-	<footer>
 		<script type="text/javascript" src="myapp.js"></script>
-	</footer>
+	</body>
 
 </html>

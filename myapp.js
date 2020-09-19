@@ -6,7 +6,6 @@ const numbersEl   = document.getElementById('numbers');
 const symbolsEl   = document.getElementById('symbols');
 const generateEl  = document.getElementById('generate');
 const clipboardEL = document.getElementById('clipboard');
-		
 
 	function getRandomUpper() {
 	return String.fromCharCode(Math.floor(Math.random()*26 + 65));		 	
@@ -31,10 +30,10 @@ const clipboardEL = document.getElementById('clipboard');
 
 	generateEl.addEventListener("click", function(){
 			
-			const conatainUpper = uppercaseEl.checked;
-			const conatainLower = lowercaseEl.checked;
-			const conatainNumber = numbersEl.checked;
-			const conatainSymbol = symbolsEl.checked;
+		const conatainUpper = uppercaseEl.checked;
+		const conatainLower = lowercaseEl.checked;
+		const conatainNumber = numbersEl.checked;
+		const conatainSymbol = symbolsEl.checked;
 
 		resultEl.innerText = generatePass(conatainUpper,
 										  conatainLower, 
@@ -47,7 +46,6 @@ const clipboardEL = document.getElementById('clipboard');
 		let generatedPassword = '';
 		const typeCount = upper+lower+number+symbol;
 		if (typeCount == 0) { return '';}
-			
 			const typeArr = [{upper},{lower},{number},{symbol}].filter(function(item){
 			return Object.values(item)[0];
 		});
@@ -73,4 +71,4 @@ const clipboardEL = document.getElementById('clipboard');
 		document.execCommand('copy');
 		textArea.remove();
 		alert('Copied!');
-	})
+	});

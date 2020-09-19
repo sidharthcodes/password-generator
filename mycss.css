@@ -45,7 +45,6 @@ input[type=checkbox]{
 	color: #00ff00;
 	display: inline-block;
 	margin: 8px;
-	
 }
 
 .btn{
@@ -77,5 +76,7 @@ input[type=checkbox]{
 	font-size: 18px;
 	border: none;
 	background: #808080;
-	width: 30px;
+	width: 42px;
+	padding-left: 10px;
+	border-radius: 8px;
 }
