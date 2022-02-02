@@ -5,17 +5,14 @@ h1{
 }
 
 body{
-	padding:120px 0;
 	background-image: url('images/hacker.jpeg');
-	background-size: contain;
-	}
-
+	background-size: cover;
+}
 #content{
 	width: 400px;
 	height: 490px;
 	background-color: #000000;
-	margin-left: 150px;
-		
+	margin: 10% 20%;
 }
 .input{
 	text-align: left;
@@ -80,3 +77,19 @@ input[type=checkbox]{
 	padding-left: 10px;
 	border-radius: 8px;
 }
+
+@media only screen and (max-width: 600px) {
+	.lorem{
+		color: lightblue;
+	}
+	body{
+		background-color: #000000;
+		margin: 0;
+		padding: 0;
+	}
+	#content{
+		margin: 5%;
+		width: 90%;
+		text-align: center;
+	}
+  }
