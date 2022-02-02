@@ -8,12 +8,14 @@ body{
 	background-image: url('images/hacker.jpeg');
 	background-size: cover;
 }
+
 #content{
 	width: 400px;
 	height: 490px;
 	background-color: #000000;
 	margin: 10% 20%;
 }
+
 .input{
 	text-align: left;
 	font-size: 26px;
@@ -78,18 +80,21 @@ input[type=checkbox]{
 	border-radius: 8px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
+
 	.lorem{
 		color: lightblue;
 	}
+
 	body{
 		background-color: #000000;
 		margin: 0;
 		padding: 0;
 	}
+
 	#content{
 		margin: 5%;
 		width: 90%;
 		text-align: center;
 	}
-  }
+}
